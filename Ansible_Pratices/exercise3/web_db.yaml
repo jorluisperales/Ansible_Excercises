@@ -12,11 +12,14 @@
         name: httpd
         state: started
         enabled: yes
-    - name: Copy web file
+    - name: Copy index.html
       copy:
         src: index.html
         dest: /var/www/html/index.html
-
+        owner: root
+        group: root
+        mode: '0644'
+        backup: yes
 
 - name: Setup DBServer
   hosts: dbsrvgrp
