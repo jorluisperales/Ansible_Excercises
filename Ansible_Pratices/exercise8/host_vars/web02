@@ -1,0 +1,3 @@
+# Variables accessible by web02 host
+USRNM: web02user
+COMM: Variable from host_vars/web02 file
