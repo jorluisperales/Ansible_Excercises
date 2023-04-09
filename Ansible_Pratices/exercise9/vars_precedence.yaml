@@ -1,0 +1,17 @@
+- name: Understanding procedence of variables
+  hosts: all
+  become: yes
+  # vars:
+   #USRNM: playuser
+   #COMM: Variable from playbook
+  tasks:
+   - name: create an user
+     user:
+       name: "{{USRNM}}"
+       comment: "{{COMM}}"
+     register: USROUT
+
+   - debug:
+       var: USROUT.name
+   - debug:
+       var: USROUT.comment
