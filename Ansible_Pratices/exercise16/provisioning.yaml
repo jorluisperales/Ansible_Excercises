@@ -1,0 +1,12 @@
+---
+- name: Provisioning Server
+  hosts: all
+  become: yes
+  roles:
+    - role: geerlingguy.java
+    - role: post-install
+      vars:
+        ntp0: 0.europe.pool.ntp.org
+        ntp1: 0.europe.pool.ntp.org
+        ntp2: 0.europe.pool.ntp.org
+        ntp3: 0.europe.pool.ntp.org

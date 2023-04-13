@@ -1,0 +1,5 @@
+2023-04-12 21:37:10,834 p=13726 u=jp n=ansible | Starting galaxy role install process
+2023-04-12 21:37:11,408 p=13726 u=jp n=ansible | - downloading role 'java', owned by geerlingguy
+2023-04-12 21:37:12,405 p=13726 u=jp n=ansible | - downloading role from https://github.com/geerlingguy/ansible-role-java/archive/2.3.0.tar.gz
+2023-04-12 21:37:13,108 p=13726 u=jp n=ansible | - extracting geerlingguy.java to /Users/jp/.ansible/roles/geerlingguy.java
+2023-04-12 21:37:13,117 p=13726 u=jp n=ansible | - geerlingguy.java (2.3.0) was installed successfully
